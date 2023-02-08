@@ -1,10 +1,12 @@
-(use-modules (guix packages) (gnu packages base))
-(use-modules (guix download))
-(use-modules (guix build-system python))
-(use-modules (guix licenses))
-(use-modules (gnu packages wm))
+(define-module (custom-channel packages qtile)
+#:use-module (guix packages)
+#:use-module (gnu packages base)
+#:use-module (guix download)
+#:use-module (guix build-system python)
+#:use-module (guix licenses)
+#:use-module (gnu packages wm))
 
-(define-public qtile-0.22.1
+(define-public qtile
 (package
     (inherit qtile)
     (version "0.22.1")
